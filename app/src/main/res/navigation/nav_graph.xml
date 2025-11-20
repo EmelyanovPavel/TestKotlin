@@ -17,20 +17,15 @@
         android:id="@+id/testFragment"
         android:name="com.example.testkotlin.TestFragment"
         android:label="Test">
+
         <action
             android:id="@+id/action_testFragment_to_resultFragment"
             app:destination="@id/resultFragment">
-            <!-- Передаём аргументы -->
-            <argument
-                android:name="user_name"
-                app:argType="string" />
-            <argument
-                android:name="score"
-                app:argType="integer" />
-            <argument
-                android:name="total_questions"
-                app:argType="integer" />
+            <argument android:name="user_name" app:argType="string" />
+            <argument android:name="score" app:argType="integer" />
+            <argument android:name="total_questions" app:argType="integer" />
         </action>
+
     </fragment>
 
     <fragment
