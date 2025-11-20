@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="action_nameFragment_to_quizFragment" type="id">To Test
+    </item>
+    <item name="action_resultFragment_to_nameFragment" type="id">To name
+        fragment
+    </item>
+    <item name="resultFragment" type="id">Result Fragment</item>
+    <item name="txtQuestion" type="id">txtQuestion</item>
+    <item name="radioGroup" type="id">radioGroup</item>
+    <item name="rbOption1" type="id">1</item>
+    <item name="rbOption2" type="id">2</item>
+    <item name="rbOption3" type="id">3</item>
+    <item name="nameFragment" type="id">Name</item>
+    <item name="testFragment" type="id">Test</item>
+    <item name="action_nameFragment_to_testFragment" type="id">To test</item>
+    <item name="nav_graph" type="id">navigation</item>
+    <item name="action_testFragment_to_resultFragment" type="id">To results</item>
+</resources>
