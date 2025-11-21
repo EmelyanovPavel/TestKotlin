@@ -15,4 +15,6 @@
         app:defaultNavHost="true"
         app:navGraph="@navigation/nav_graph"
         tools:layout="@layout/activity_main"/>
+
+    <com.airbnb.lottie
 </androidx.constraintlayout.widget.ConstraintLayout>

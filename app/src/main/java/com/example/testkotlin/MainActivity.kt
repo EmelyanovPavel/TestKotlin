@@ -1,6 +1,9 @@
 package com.example.testkotlin
 
+import android.content.Context
+import android.graphics.Typeface
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,6 +18,16 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+    }
+
+    fun setCustomFont(textView: TextView, fontName: String, context: Context) {
+        try {
+            val typeface = Typeface.createFromAsset(context.assets, "fonts/$fontName")
+            textView.typeface = typeface
+        } catch (e: Exception) {
+            // Handle font loading error
+            e.printStackTrace()
         }
     }
 }

@@ -16,4 +16,5 @@
     <item name="action_nameFragment_to_testFragment" type="id">To test</item>
     <item name="nav_graph" type="id">navigation</item>
     <item name="action_testFragment_to_resultFragment" type="id">To results</item>
+    <item name="lottie_animation" type="id">animation</item>
 </resources>

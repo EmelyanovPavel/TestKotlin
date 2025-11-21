@@ -16,27 +16,32 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:fontFamily="@font/lao_ui"/>
 
         <RadioButton
             android:id="@+id/rbOptionA"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lao_ui"/>
 
         <RadioButton
             android:id="@+id/rbOptionB"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lao_ui"/>
 
         <RadioButton
             android:id="@+id/rbOptionC"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lao_ui"/>
 
         <Button
             android:id="@+id/btnNext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/nextQuestion" />
+            android:text="@string/nextQuestion"
+            android:fontFamily="@font/lao_ui"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
