@@ -6,49 +6,54 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="16dp"
     android:gravity="center"
-    tools:context=".NameFragment">
+    tools:context=".NameFragment"
+    style="@style/Base.Theme.TestKotlin">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/enter_the_name"
-        android:textSize="24sp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/lao_ui"/>
-
-    <EditText
-        android:id="@+id/editName"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/your_name"
-        android:minHeight="48dp"
-        tools:layout_editor_absoluteX="-19dp"
-        tools:layout_editor_absoluteY="49dp"
-        android:fontFamily="@font/lao_ui"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@id/lottie_animation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="304dp"
-        app:lottie_autoPlay="true"
-        app:lottie_ramRes="@raw/liveChatbot"
-        app:lottie_loop="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-    </com.airbnb.lottie.LottieAnimationView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_the_name"
+            android:textSize="24sp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/lao_ui"/>
 
-    <Button
-        android:id="@+id/btnNext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/next"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lottie_animation"
-        android:fontFamily="@font/lao_ui"/>
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/your_name"
+            android:minHeight="48dp"
+            tools:layout_editor_absoluteX="-19dp"
+            tools:layout_editor_absoluteY="49dp"
+            android:fontFamily="@font/lao_ui"/>
 
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@id/lottie_animation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/gears_animation" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lao_ui"
+            android:text="@string/next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lottie_animation" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".TestFragment">
 
     <LinearLayout
@@ -14,34 +15,35 @@
         <TextView
             android:id="@+id/tvQuestion"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="69dp"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:fontFamily="@font/lao_ui"/>
+            app:fontFamily="@font/lao_ui" />
 
         <RadioButton
             android:id="@+id/rbOptionA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/lao_ui"/>
+            app:fontFamily="@font/lao_ui"/>
 
         <RadioButton
             android:id="@+id/rbOptionB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/lao_ui"/>
+            app:fontFamily="@font/lao_ui"/>
 
         <RadioButton
             android:id="@+id/rbOptionC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/lao_ui"/>
+            app:fontFamily="@font/lao_ui"/>
 
         <Button
             android:id="@+id/btnNext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/nextQuestion"
-            android:fontFamily="@font/lao_ui"/>
+            app:fontFamily="@font/lao_ui"/>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

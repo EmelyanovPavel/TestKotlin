@@ -8,8 +8,6 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.testkotlin.PreferencesManager
-
 class NameFragment : Fragment() {
     private lateinit var preferencesManager: PreferencesManager
 
@@ -18,6 +16,7 @@ class NameFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_name, container, false)
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
