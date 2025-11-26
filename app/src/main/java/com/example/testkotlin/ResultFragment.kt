@@ -21,17 +21,17 @@ class ResultFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         // Получаем данные из аргументов
-        val userName = arguments?.getString("user_name") ?: "Unknown"
+//        val userName = arguments?.getString("user_name") ?: "Unknown"
         val score = arguments?.getInt("score") ?: 0
         val totalQuestions = arguments?.getInt("total_questions") ?: 0
 
         // Находим View
-        val tvUserName = view.findViewById<TextView>(R.id.tvUserName)
+//        val tvUserName = view.findViewById<TextView>(R.id.tvUserName)
         val tvScore = view.findViewById<TextView>(R.id.tvScore)
         val btnRestart = view.findViewById<Button>(R.id.btnRestart)
 
         // Заполняем данные
-        tvUserName.text = "User: $userName"
+//        tvUserName.text = "User: $userName"
         tvScore.text = "The correct answers number: $score out of $totalQuestions"
 
         // Обработчик кнопки
